@@ -3,6 +3,7 @@ package org.graylog2.indexer;
 import org.graylog2.messagehandlers.gelf.GELFMessage;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  */

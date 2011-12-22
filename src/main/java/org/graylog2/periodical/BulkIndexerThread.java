@@ -64,7 +64,7 @@ public class BulkIndexerThread implements Runnable {
 
             List<GELFMessage> messages = mq.readBatch(batchSize);
             LOG.info("... indexing " + messages.size() + " messages.");
-            indexer.bulkIndex(messages);
+            Indexer.bulkIndex(messages, mq.getTypes());
 
             /*
              * Write message queue size information to server values. We do this
